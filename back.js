@@ -16,7 +16,6 @@ function randomImg() {
 		var myLinks = new Array();
 
 		//links -> array
-		css64.github.io
 		myLinks[1] = "http://css64.github.io";
 		myLinks[2] = "http://css64.github.io";
 		myLinks[3] = "http://css64.github.io";
