@@ -223,6 +223,10 @@ label /*меню адаптив*/,{
     transition: all .3s ease-in-out;
 }
 
+.foricon svg {
+  width: 30px;
+}
+
 .foricon a{
 color:#fff;
 border-bottom:1px dashed #3ea6ff;
