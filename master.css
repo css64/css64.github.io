@@ -224,7 +224,10 @@ label /*меню адаптив*/,{
 }
 
 .foricon svg {
+  position: absolute;
   width: 30px;
+  margin: 0 -45px;
+width: 30px;
 }
 
 .foricon a{
@@ -493,11 +496,6 @@ width: 30px;
   padding-bottom: 2px;
   transition: all .1s ease-in-out;
 }
-
-.footer svg {
-    position: absolute;
-    top: -5.3px; 
-    right: 50px;}
 
 /*—————— пространства*/
 
