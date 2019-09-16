@@ -100,8 +100,7 @@ iframe {
 .btn svg {
 position: absolute;
     width: 30px;
-    left: 1.2vw;
-    top: 1.45vh;
+margin: -5.5px -41px;
 }
 
 .btn:before{
@@ -274,8 +273,8 @@ animation: rotating 5s linear infinite;
 }
 
 .navigation a{
-  font-size: 14px !important;
-  margin:16px 10px 0px 0px; 
+/*  font-size: 14px !important;
+*/  margin:16px 10px 0px 0px; 
   transition: all .3s ease-in-out;
 }
 
@@ -336,8 +335,8 @@ animation: rotating 5s linear infinite;
 
 .modul {
   align-content: flex-start;
-  font-size: 16px;
-  line-height: 18px;
+/*  font-size: 16px;
+*/  line-height: 18px;
   color: #8c8c8c;
 }
 
