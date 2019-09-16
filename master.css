@@ -190,8 +190,8 @@ label /*меню адаптив*/,{
     content: ' ';
     background-image: url(img/arright-up.svg);
     background-repeat: no-repeat;
-    background-size: 11px 18px;
-    padding: 0 17px 10px 0px;
+background-size: 12px 23px;
+    padding: 0 16px 0 0px;
 }
 
 .navigation a,
@@ -226,8 +226,7 @@ label /*меню адаптив*/,{
 .foricon svg {
   position: absolute;
   width: 30px;
-  margin: 0 -45px;
-width: 30px;
+  margin: -6px -45px;
 }
 
 .foricon a{
@@ -574,19 +573,30 @@ filter: drop-shadow(0 40px 30px #000000);
     top: 40% !important;
   }
 
+.menu {
+    border-radius: 25px !important;
+  }
+
 .btn {
-  font-size: 2em;
-    padding: 38px 60px 40px 100px !important;
+  font-size: 3em;
+    padding: 38px 60px 40px 125px !important;
   }
 
 .btn svg {
-      width: 50px !important;
-    margin: -10px -80px !important;
+    width: 60px !important;
+    margin:-6px -92px !important;
 }
 
 .smenu a {
-    font-size: 2em !important;
+    font-size:3em !important;
+    padding: 30px 26px !important;
 }
+
+.logot {
+    /* margin: 10px 0 0 50px; */
+    width: 80px;
+    transform: translateY(36px);
+  }
 
 .footer{
     flex-direction: column;
@@ -602,9 +612,19 @@ filter: drop-shadow(0 40px 30px #000000);
   width: auto;
 }
 
+label {
+    width: 48% !important;}
+
   .show-menu-btn,.hide-menu-btn{
     display: block;
   }
+  .feed svg {
+    margin:-5px 150px !important;
+}
+
+.pres svg {
+    margin: -6px 100px !important;
+}
   .menupanelt{
     position: fixed;
     width: 100%;
@@ -626,7 +646,7 @@ filter: drop-shadow(0 40px 30px #000000);
   .hide-menu-btn{
     position: absolute;
     top: 0px;
-    right: 30px;
+    right: 77px;
   }
   #chk:checked ~ .menupanelt{
     right: 0;
@@ -652,6 +672,10 @@ filter: drop-shadow(0 40px 30px #000000);
     width: 35px;
     height: 35px;
   }
+
+.content p {
+    padding: 0 0 30px 0;
+}
 
 .rgt , .lft ,
 .moduls img {
@@ -758,6 +782,10 @@ transform: translateX(-40%);
     width: 50px;
 }
 
+.work-contain label {
+    font-size: 35px;
+    border-bottom: 1px solid #000000;
+}
 
 .wide img {
     width: 100%;
@@ -765,4 +793,10 @@ transform: translateX(-40%);
 
 
 }
+
+@media  screen and (orientation:landscape) and (max-device-width: 900px) {
+.sfooter {
+padding: 80% 0 6% 36% !important;}
+
+  }
 

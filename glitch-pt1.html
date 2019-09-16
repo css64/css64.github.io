@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+  <!-- МЕТА -->
+  <title>Статьи 〉Glitch как современное искусство /// 1 часть</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- copy -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="back.js"></script>
+  
+  <meta name="description" content="описание не длиннее 155 символов">
+  <meta name="keywords" content="мета-теги, шаблон, html, css">
+ 
+  <!-- Контролирует поведение поисковых систем при индексации страницы --> 
+  <meta name="robots" content="index,follow,noodp"><!-- Все поисковые системы -->
+  <meta name="googlebot" content="index,follow"><!-- Указание отдельно для Google -->
+ 
+  <!-- Позволяет указать Google не показывать в поисковой выдаче поле для поиска по сайту -->
+  <meta name="google" content="nositelinkssearchbox"><!-- Позволяет указать Google не предлагать перевести эту страницу -->
+  <meta name="google" content="notranslate"><!-- Подтверждает авторство страницы в Google Search Console -->
+  <meta name="google-site-verification" content="verification_token"> <!-- Тег указания ПО, которое сгенерировало эту страницу -->
+  <meta name="generator" content="program"><!-- Короткое описание тематики вашего сайта -->
+  <meta name="subject" content="тематика вашего сайта"><!-- open graph Facebook-->
+  <meta content="Заголовок">
+  <meta content="website">
+ 
+  <!-- если сайт многоязычный -->
+  <!-- <meta property="og:locale" content="ru_RU"> -->
+  <meta content="http://localhost.my">
+ 
+  <!-- не меньше 600х315, не более 8Мб -->
+  <meta content="http://localhost.my/img/og_cover.jpg">
+  <meta content="описание не длиннее 155 символов">
+  <meta content="Facebook ID">
+ 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ник_компании_в_твиттере">
+  <meta name="twitter:title" content="Заголовок">
+  <meta name="twitter:description" content="описание не длиннее 155 символов">
+  <meta name="twitter:creator" content="@ник_в_твиттере">
+ 
+  <!-- картинка не меньше 280х150, не более 1Мб -->
+  <meta name="twitter:image" content="http://localhost.my/img/tw_cover.jpg">
+ 
+  <!-- G+ / Pinterest -->
+  <meta content="Заголовок">
+  <meta content="описание не длиннее 155 символов">
+  <meta content="http://localhost.my/img/g_cover.jpg">
+ 
+  <!-- Google authorship -->
+  <link rel="author" href="https://plus.google.com/[Google+_Profile]/posts" data-mce-href="https://plus.google.com/[Google+_Profile]/posts">
+  <link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]" data-mce-href="https://plus.google.com/[Google+_Page_Profile]">
+ 
+  <!-- Фавиконы и иконки сайта --> 
+<!--   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png"> -->
+  <meta name="theme-color" content="#ffffff">
+ 
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#4285f4">
+ 
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#4285f4">
+ 
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ 
+  <!-- Яндекс.Браузер -->
+ <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
+ 
+</head>
+  <div class="headert">
+         <a href="index.html" class="logot">
+          <svg id="6d04d81e-ebca-4f43-9ad0-d14cc99c6f03" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.56 197.94"><title>logo</title><path d="M0,0,114.28,197.94,228.56,0ZM114.28,51.91,67.44,25h93.68Zm-58-4.52,45.55,26.17v52.73Zm70.55,78.9V73.56l45.55-26.17Z"/></svg>
+        </a>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn feed foricon">
+      <svg id="493c8391-1c2a-4bac-b438-4fb72c595f9f" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.28 56.79"><title>burger</title><rect width="66.28" height="11.58" rx="1" ry="1"/><rect y="22.6" width="66.28" height="11.58" rx="1" ry="1"/><rect y="45.21" width="66.28" height="11.58" rx="1" ry="1"/></svg>
+    </label>
+
+    <ul class="menupanelt">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a href="works.html">Работы</a>
+      <a href="read.html">Статьи</a>
+      <label for="chk" class="hide-menu-btn feed foricon">
+        <svg id="38ae1da5-3f63-4f53-9b99-dea2c3d4f5fe" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.23 54.23"><title>close</title><path d="M53.94,7.07,47.16.29a1,1,0,0,0-1.41,0L27.11,18.93,8.48.29a1,1,0,0,0-1.41,0L.29,7.07a1,1,0,0,0,0,1.41L18.93,27.11.29,45.75a1,1,0,0,0,0,1.41l6.78,6.78a1,1,0,0,0,1.41,0L27.11,35.3,45.75,53.94a1,1,0,0,0,1.41,0l6.78-6.78a1,1,0,0,0,0-1.41L35.3,27.11,53.94,8.48A1,1,0,0,0,53.94,7.07Z"/></svg>
+      </label>
+    </ul>
+  </div>
+
+
+<div class="content">
+      <div class="navigation"><ul><a href="index.html">Главная</a><a href="read.html">Статьи</a><a>Glitch как современное искусство /// 1&nbsp;часть</a></ul>
+      </div><!-- navigation -->
+    <center class="wide">
+      <img src="img/glitch1.jpg" alt="">
+    </center>
+    <center class="opener">Glitch как современное искусство /// 1&nbsp;часть</center>
+    <p>
+      Все больше наблюдательных творцов и даже простых людей замечают определенную тенденцию в рекламе и даже искусстве: при ленивом «скроле» новостных лент дисплеи их устройств будто бы сходят с ума и начинают искажаться необычным образом. Одних людей это вводит в раздражение, других — интригует своим содержанием. Сегодня мы постараемся как можно полнее и лаконичнее рассказать, что же это за новое течение в искусстве и ново ли оно.
+    </p>
+    <center class="separator"></center>
+     <div class="moduls">
+       <div class="modul lft"><img src="dnm/glitch.gif" alt=""></div>
+       <div class="modul rgt">
+        <center class="capital">История</center>
+          Самое первое употребление слова 'glitch' принадлежит астронавту Джону Гленнону в 1962 году. Стоит отметить - оно подразумевало конкретно неполадки связи во время орбитального космического полета. Знал ли он, что дал имя целому течению искусства? История умалчивает.
+       </div>
+     </div>
+     <center class="void"></center>
+    <p>
+      Можете ли вы с уверенностью сказать, что глитчи — это нечто совершенно новое? Думаю, нет. Одним из прародителей этого стиля можно назвать экспрессионизм, целью которого являлась передача не столько точности изображаемого, сколько душевного состояния и эмоций художника с помощью новых техник и приемов.
+    </p>
+    <center class="wide">
+      <img src="img/glitch2.jpg" alt="">
+      дриппинг Д. Поллока
+    </center>
+    <center class="void"></center>
+    <center class="wide">
+      <img src="img/glitch3.jpg" alt="">
+      глитч-арт Неизвестного
+    </center>
+    <center class="void"></center>
+    <p>
+      В период зарождения кинематографа и много после этого, как вы, несомненно, знаете, каждый фильм обладал своими уникальными глитчами: полосы, рябь на экране, случайные светлые пятна или затемнения. Все это было вызвано несовершенством техники, которую использовали для съемок и монтажа. Однако, спустя многие годы, уже при намного более качественном оборудовании эти эффекты сохранили. Они и по сей день используются как стилистический прием, столь милый нашим родителям и более старшему поколению (да-да, они тоже, оказывается, ценители глитчей). Такие изображения считаются уютными и «ламповыми». Удивительно то, что, вроде бы, поврежденное изображение может передать дополнительный смысл.
+    </p>
+    <center class="wide">
+      <img src="img/glitch4.jpg" alt="">
+    </center>
+    <center class="separator"></center>
+    <center class="capital">Аналогия</center>
+    <p>
+      Сейчас же глитчи не пользуются большим уважением, часто считаясь "недоискусством", особенно среди ценителей старой школы. Но давайте вспомним эпоху Ренессанса: тогда, как и сейчас, многие вещи неоправданно считались не достойными внимания или вовсе запрещенными. Были определенные каноны изображения, которые считались эталонными, и отступать от них считалось неправильным. Уровень этих изображений был, мягко говоря, не высок.
+    </p>
+    <center class="wide">
+      <img src="img/glitch5.jpg" alt="">
+    </center>
+    <p>
+      Сам Ренессанс был спровоцирован художниками, которые не боялись нарушать эти традиции и стремились расширить границы своего умения. К примеру, легендарный Леонардо для более совершенного изображения людей изучал анатомию. Порой ему приходилось, словно патологоанатому, препарировать тела для лучшего понимания строения мышц и скелета, за что он неоднократно имел проблемы с церковью. Рискуя прослыть чернокнижником он расширял базу знаний, используемых многими поколениями после него. Посмотрите на разницу :
+    </p>
+    <center class="wide">
+      <img src="img/glitch6.jpg" alt="">
+    </center>
+    <p>
+      Возможно, существуют более удачные сравнения, но суть, мне кажется, описана верно — людям свойственно негативно относиться к тому, чего они не понимают. Неприятие и осуждение — бич всех времен.
+    </p>
+    <center class="separator"></center>
+    <div class="moduls">
+       <div class="modul lft"><img src="dnm/glitch2.gif" alt=""></div>
+       <div class="modul rgt">
+        <center class="capital">Итог</center>
+          Любое искусство, любое новое течение имеет право на жизнь. Можете ли вы сказать, что глитч-арт не имеет права существовать? Разве не позволяет он увидеть нечто обыденное с другого ракурса? Можете ли вы быть уверены, что этот вид искусства не приведет ни к чему стоящему? Я — нет. Слишком уж много в истории примеров того, что не бывает ничего лишнего или «неважного».
+<br><br>
+          Нет ничего, что не достойно существовать.
+          <center class="next "><a href="glitch-pt2.html">Следующая статья</a></center>
+       </div>
+     </div>
+     <center class="void"></center>
+      <div class="navigation"><ul><a href="index.html">Главная</a><a href="read.html">Статьи</a><a>Glitch как современное искусство /// 1 часть</a></ul>
+      </div><!-- navigation -->
+    <center class="void"></center>
+    </div><!-- content -->
+
+<!--   footer
+ -->
+<div class="footer">
+
+  <div class="foricon">
+    <svg id="ee51226a-b840-41de-a8ca-5751e0f2042b" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.2 60.2"><title>info</title><path d="M60.2,42.14l-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm-6-18.06-6-6-6,6,6,6ZM54.18,12l-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm12-24.08-6-6-6,6,6,6ZM24.08,6l-6-6L12,6l6,6Zm-12,12L6,12l-6,6,6,6Z"/></svg>
+<nobr>Контактная информация <i>:</i></nobr></div>
+
+  <div class="foricon">
+    <svg id="3f16020a-6eaa-4dc4-995e-06bc6bc18b36" data-name="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.26 78.24"><title>mail</title><path d="M107.26,67.51V10.73A10.75,10.75,0,0,0,96.53,0H10.73A10.75,10.75,0,0,0,0,10.73V67.51A10.75,10.75,0,0,0,10.73,78.24h85.8a10.75,10.75,0,0,0,10.73-10.73ZM91.3,7.68,53.21,41.87,15,7.68ZM35.09,37.91,7.68,63.56V13.41ZM13.63,70.56,42,44.06l8.23,7.35a4.33,4.33,0,0,0,.66.49,4.54,4.54,0,0,0,5.44-.52l8.47-7.59L92.93,70.56ZM71.57,37.67l28-25.12V64.26Z"/></svg>
+          <span id="text">teist64@gmail.com</span>
+          <button id="copy">Копировать в буфер</button>
+        </div>
+
+  <div class="foricon">
+   <svg id="f81e6596-df59-400d-bcf2-a42b2001e740" data-name="tlg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.68 92.66"><title>tlg</title><path d="M5.54,38.22A17,17,0,0,0,.9,41.11c-1.36,1.18-1.13,2.77.37,3.81a11.59,11.59,0,0,0,3.1,1.46Q15.89,50,27.44,53.58a1.83,1.83,0,0,1,1.37,1.34c.91,2.93,1.89,5.84,2.83,8.76l6.9,21.23c.52,1.61.94,2,2.63,2.07a6.07,6.07,0,0,0,4.89-1.89c4-4,8.11-7.87,12.14-11.83.58-.58,1-.67,1.62-.12.87.74,1.84,1.38,2.77,2.07,7.11,5.25,14.18,10.56,21.34,15.73,3.81,2.75,8.19,2.57,9.48-3.3,2.06-9.33,4-18.68,6-28q4.94-23.19,9.86-46.38c.54-2.55,1-5.11,1.41-7,0-3.59-1.3-5.79-3.6-6.15a7.72,7.72,0,0,0-3.8.43Q63.68,15.72,24.11,31C17.92,33.41,11.7,35.73,5.54,38.22ZM33.13,51.56Q60,34.66,86.86,17.71a8.9,8.9,0,0,1,2.74-1.14c.5-.12,1.12.24,1.68.38-.21.53-.28,1.21-.65,1.55-3.62,3.34-7.28,6.63-10.94,9.92Q61.88,44.5,44.08,60.59a2.26,2.26,0,0,0-.67,1.34c-.57,5.81-1.1,11.62-1.65,17.43,0,.29-.14.58-.2.87l-.26,0q-2-6.24-4.06-12.46c-1.57-4.82-3.13-9.63-4.74-14.44A1.25,1.25,0,0,1,33.13,51.56Z"/></svg>          
+          <a href="https://t.me/teist64">@teist64</a>
+        </div>
+
+  <div class="foricon">
+    <svg id="b8109a04-a19b-40ba-b801-e74c53f65091" data-name="cpr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.2 87.2"><title>cpr</title><path d="M87.18,42.28a43.6,43.6,0,1,0-42.26,44.9A43.64,43.64,0,0,0,87.18,42.28ZM44.64,78A34.38,34.38,0,1,1,78,42.56,34.4,34.4,0,0,1,44.64,78Z"/><path d="M49.59,52.31a23.31,23.31,0,0,1-3.71.44c-3.25.09-5.55-.67-6.9-2.3s-2.08-4-2.17-7a10.77,10.77,0,0,1,1.87-7q2-2.7,6.24-2.82a15.65,15.65,0,0,1,3.6.27,26.09,26.09,0,0,1,3,.81L53.26,27a22.81,22.81,0,0,0-9.36-1.58,18,18,0,0,0-7.27,1.63A16.15,16.15,0,0,0,28,36.82a19.63,19.63,0,0,0-1,6.93,23.9,23.9,0,0,0,1.21,7,14.56,14.56,0,0,0,3.31,5.52,15,15,0,0,0,5.6,3.59,20.65,20.65,0,0,0,8,1.13,26.94,26.94,0,0,0,5.5-.68A22.53,22.53,0,0,0,54.8,59l-1.58-7.78A15.89,15.89,0,0,1,49.59,52.31Z" style="fill:#fbfefa"/></svg>
+          <nobr>2018 <i>&ndash;</i> 2019</nobr>
+        </div>
+</div><!-- footer -->
+
+
+
+<!-- правая панель -->
+      <a class="gotopbtn" href="#">
+      <svg id="290dfa8a-0a96-49ad-821a-386b71893f7f" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.78 59.5"><title>arup</title><polygon points="74.78 59.5 59.76 59.5 37.42 23.9 15.03 59.5 0 59.5 37.43 0 74.78 59.5"/></svg>
+      </a>
+        <div class="wrapper">
+          <input type="checkbox" name="" id="switch">
+                <label for="switch" class="switch-label">
+                    <div class="toggle"></div>
+          </label>
+        </div>
+
+<script>
+  $('#copy').click(function() {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($('#text').text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+
+      $(this).text('Почта скопирована');
+  });
+</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./darkmode.js"></script>
+
+</body>
+</html>
