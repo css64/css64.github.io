@@ -11,21 +11,11 @@ function randomImg() {
 		myImages[3] = "img/cart3.jpg";
 		myImages[4] = "img/cart4.jpg";
 
-		//array links
-
-		var myLinks = new Array();
-
-		//links -> array
-		myLinks[1] = "http://css64.github.io";
-		myLinks[2] = "http://css64.github.io";
-		myLinks[3] = "http://css64.github.io";
-		myLinks[4] = "http://css64.github.io";
-
 		var rnd = Math.floor(Math.random() * myImages.length);
 		if (rnd == 0){
 			rnd = 1;
 		}
 
 		//show
-		document.write('<a href="'+myLinks[rnd]+'"><img src="'+myImages[rnd]+'" border="0"></a>');
+		document.write('<img class="back-img" src="'+myImages[rnd]+'" border="0"></a>');
 }
