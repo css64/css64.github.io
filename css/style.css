@@ -765,10 +765,22 @@ a.tile:active{
 }
 
 @media (max-width: 1040px){
+.content p {
+     font-size: 19px !important;}
+
+.more-wide p {
+     font-size: 36px !important;}
+
 .content {
      line-height: 4.2em;
-     letter-spacing: 0.15em !important; 
+     letter-spacing: 0.15em !important;}
+.card:hover {
+    transform: translateX(-50%) !important;}
+
+.info-text {
+    font-size: 3em;
 }
+
 .back-vo {
     display: none;
 }

@@ -805,6 +805,10 @@ img.back-ba {
     height: 35px;
   }
 
+.content .text-intro .capital {
+    margin: 50px 0;
+  }
+
 .content p {
     padding: 0 0 30px 0;
 }
