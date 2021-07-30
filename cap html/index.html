@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>Jooi Network</title>
+
+<style>
+
+html {
+    background: #0f073a !important;
+}
+
+body {
+    height: 100vh;
+}
+
+.landscape {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	height: 100%;
+	z-index: 1;
+}
+
+.vertical {
+	display: none;
+	transform: scale(1.06);
+	width: 100%;
+	z-index: 1;
+}
+
+.gradient {
+position: relative;
+background: rgba(15,7,58,1);
+background: -moz-linear-gradient(left, rgba(15,7,58,1) 0%, rgba(15,7,58,0) 50%, rgba(15,7,58,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(15,7,58,1)), color-stop(50%, rgba(15,7,58,0)), color-stop(100%, rgba(15,7,58,1)));
+background: -webkit-linear-gradient(left, rgba(15,7,58,1) 0%, rgba(15,7,58,0) 50%, rgba(15,7,58,1) 100%);
+background: -o-linear-gradient(left, rgba(15,7,58,1) 0%, rgba(15,7,58,0) 50%, rgba(15,7,58,1) 100%);
+background: -ms-linear-gradient(left, rgba(15,7,58,1) 0%, rgba(15,7,58,0) 50%, rgba(15,7,58,1) 100%);
+background: linear-gradient(to right, rgba(15,7,58,1) 0%, rgba(15,7,58,0) 50%, rgba(15,7,58,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f073a', endColorstr='#0f073a', GradientType=1 );
+height: 100vh;
+z-index: 2;
+}
+
+@media  screen and (orientation:portrait) and (max-device-width: 768px) {
+.landscape {
+width: 100%;
+}
+
+@media  screen and (orientation:portrait) and (max-device-width: 425px) {
+.landscape {
+display: none;
+}
+
+@media  screen and (max-device-width: 425px) {
+.vertical {
+	display: block;
+}
+.gradient{
+	position: absolute;
+}
+}
+</style>
+
+<head>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- favicon setting -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_pack/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_pack/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_pack/favicon-16x16.png">
+<link rel="manifest" href="favicon_pack/site.webmanifest">
+<link rel="mask-icon" href="favicon_pack/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- favicon setting -->
+
+</head>
+<body>
+
+<video class="landscape" preload="auto" autoplay="true" loop="true" muted="muted" poster="poster.png">
+ <source src="mp4/desk.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+ <source src="ogv/desk.ogv" type='video/ogg; codecs="theora, vorbis"'>
+ <source src="webm/desk.webm" type='video/webm; codecs="vp8, vorbis"'>
+</video>
+
+<video class="vertical" preload="auto" autoplay="true" loop="true" muted="muted" poster="poster.png">
+ <source src="mp4/mob.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+ <source src="ogv/mob.ogv" type='video/ogg; codecs="theora, vorbis"'>
+ <source src="webm/mob.webm" type='video/webm; codecs="vp8, vorbis"'>
+</video>
+
+<div class="gradient">
+</div>
+
+</body>
+</html>
