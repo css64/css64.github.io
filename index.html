@@ -1,148 +1,742 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
- 
-  <!-- МЕТА -->
-  <title>t e i s t • блог-портфолио</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/style.css">
-    <!-- copy -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/cozuca.js"></script>
-  
-  <!-- Контролирует поведение поисковых систем при индексации страницы 
-  <meta name="robots" content="index,follow,noodp">
-  <meta name="googlebot" content="index,follow">
---> 
-<meta name="robots" content="noindex,nofollow">
-<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>Jooi Network</title>
+<style>
 
-  <meta name="description" content="Главная страница • teist">
+#loader {
+    background: radial-gradient(circle at 50% 50%, #1f005c, #190458, #140853, #100a4e, #0c0c49, #0a0d44, #090e3e, #090e39, #0a0e33, #0b0d2e, #0b0d28, #0b0c22) !important;
+}
 
-  <meta name="generator" content="Цифровое оформление и дизайн"><!-- Короткое описание тематики вашего сайта -->
-  <meta name="subject" content="• t e i s t •"><!-- open graph Facebook-->
- 
-  <!-- не меньше 600х315, не более 8Мб -->
-  <meta content="meta/index.png">
-  <meta content="Цифровое оформление и дизайн">
- 
-  <!-- картинка не меньше 280х150, не более 1Мб -->
-  <meta name="twitter:image" content="meta/index.png">
-
-<!-- opengraph -->
-
-<meta property="og:title" content="• t e i s t •"/>
-<meta property="og:description" content="Цифровое оформление и дизайн"/>
-<meta property="og:image" content="meta/index.png" alt="teist-snipet"/>
-<meta property="og:site_name" content="блог-портфолио"/>
-<meta property="og:type" content="website"/>
-
- 
-  <!-- Фавиконы и иконки сайта --> 
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-32x32.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="apple-mobile-web-app-title" content="teist &mdash; [design]">
-<meta name="application-name" content="teist &mdash; [design]">
-<meta name="msapplication-TileColor" content="#D98100">
-<meta name="theme-color" content="#ffffff">
-
-  <meta name="theme-color" content="#ffffff">
-  <meta name="msapplication-TileColor" content="#D98100">
-  <meta name="msapplication-TileImage" content="meta//mstile-144x144.png">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#3ea6ff">
- 
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#3ea6ff">
- 
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
- 
-  <!-- Яндекс.Браузер -->
- <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
-
- <style type="text/css">
-   body {
-    background: #161616 !important;
-   }
-   img{
+.load__planet {
+    z-index: 1001;
     width: 100%;
-   }
- </style>
+    animation: cycle_loader 2s linear infinite;
+}
+
+  @keyframes cycle_loader {
+        0% {
+        filter: drop-shadow(0 0 16px #00cfff60);
+        }
+
+        50% {
+        filter: drop-shadow(0 0 16px #db1fff60);
+        }
+
+        100% {
+        filter: drop-shadow(0 0 16px #00cfff60);
+        }
+        }
+
+::-webkit-scrollbar { width: 0.4vh; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}}
+::-webkit-resizer { background-color: #666;}
+
+::selection {
+color: #fff;
+background: #00cfff;
+text-shadow: 0 1px 1px #777777;
+}
+::-moz-selection {
+color: #fff;
+background: #00cfff;
+text-shadow: 0 1px 1px #777777;
+}
+::-webkit-scrollbar-thumb {
+ background-color: #00cfff;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #0b0c22;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+#particles-js {
+  background: linear-gradient(0deg, #170045, #140243, #110440, #0f063d, #0d073a, #0c0937, #0b0934, #0b0a30, #0b0b2d, #0b0b29, #0b0c26, #0b0c22) !important;
+}
+
+.simple-head .position-center-center {
+    margin-top: -50px !important;
+  }
+
+.btn-inverse {
+transition: all .3s ease-in-out !important;
+}
+
+.btn-inverse:hover {
+    background-color: #0ae0a9 !important;
+    border-radius: 30px;
+    color: #fff !important;
+    text-shadow: 0 3px 8px #0c529b;
+    transition: all .5s ease-in-out !important;
+    animation: pulse 1s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #b7db2150;
+    box-shadow: 0 0 0 0 #b7db2150;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 15px #b7db2100;
+      box-shadow: 0 0 0 15px #b7db2100;
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 #b7db2100;
+      box-shadow: 0 0 0 0 #b7db2100;
+  }
+}
+
+  @keyframes cycle_btn_wiggle {
+        0% {
+        box-shadow: 0 -10px 35px #15ff3570;
+        }
+
+        50% {
+        box-shadow: 0 -10px 25px #15ff3570;
+        }
+
+        100% {
+        box-shadow: 0 -10px 35px #15ff3570;
+        }
+        }
+
+  header .navbar{
+    float:none !important;
+    position: relative !important;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .logo__{
+    position: absolute;
+    left:0;
+    height: 50px;
+    margin-top: 150px;
+    transition: all .2s ease-in;
+  }
+  .logo__:hover{
+    filter: drop-shadow(0 -5px 25px #db1fff80);
+    transition:all .3s ease-in;
+  }
+  .margin-bottom-150{
+    margin-bottom:250px;
+  }
+  .system{
+    height: 130px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  .planet{
+    z-index: 10;
+    position:absolute;
+    top:0;
+    width: 100%;
+  }
+  .glow{
+    z-index: 10;
+    position:absolute;
+    top:1%;
+    left: -1%;
+    transform: scale(0.7);
+    width: 100%;
+    filter:blur(5);
+    opacity:0;
+    transition: all .6s ease-in-out;
+    animation: cycle_opacuty 5s linear infinite;
+  }
+  .glow:hover {
+    opacity:.6;
+    filter: drop-shadow(0 0 50px #00ffa2);
+    transition:all .3s ease-in-out;
+  }
+
+  @keyframes cycle_opacuty {
+        0% {
+        opacity:.2;
+        }
+        25% {
+        opacity:.3;
+        }
+        50% {
+        opacity:.2;
+        }
+        75% {
+        opacity:.3;
+        }
+        100% {
+        opacity:.2;
+        }
+        }
+
+.icon__{
+width: 50px;
+}
+
+.solana {
+    width: 20px;
+    margin: 0 5px 0 5px;
+}
+
+.graph_mod {
+  position: inherit;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.distri .countdown-all {
+    margin: 40px 55px 0 0;
+  }
+
+.shine_head {color: #00ffa2 !important;
+    text-shadow: 0 2px 6px #00ffa270;
+    text-transform: uppercase;
+  }
+
+.shine_text {color: #00cfff !important;
+    text-shadow: 0 2px 6px #00cfff70;
+  } 
+
+.edu-list p {
+  color:#0b0c22 !import;
+}
+
+.community-sec:before{
+background: url(images/plex.png) top center no-repeat !important;
+background-size: cover !important;
+}
+
+.community-sec {
+    background: linear-gradient(180deg, #170045, #120441, #0e063d, #0c0838, #0b0a33, #0b0b2d, #0b0b28, #0b0c22) !important;
+    z-index: 1 !important;
+}
+
+.centr-script{
+font-weight: normal;
+    color: #252525;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.parthner li a {
+  opacity: .8 !important;
+  cursor: default !important;
+}
+
+.mailer {
+  color: #00ffa2;
+}
+
+.news-letter form input{
+  border-radius: 15px;
+}
+.news-letter form button{
+  border-radius: 0 15px 15px 0;
+}
+
+@media (min-width: 992px) and (max-width: 1024px){
+.system{
+  margin-bottom: 0;
+}
+}
+
+@media (max-width: 992px){
+header .logo {
+    min-width: 50% !important;
+}
+.logo__ {
+    margin-top: 140px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.logo__ {
+    margin-top: 210px;}
+.open_text {
+    margin-top: 70px;}
+}
+
+@media (min-width: 760px) and (max-width: 768px){
+.system {
+    height: 10px;}
+
+.planet {
+  transform: scale(1.7);
+}
+
+.glow {
+  transform: scale(1.2)
+}
+
+.logo__ {
+    margin-top: 120px;
+}
+
+.open_text {
+    margin-top: 80px;}
+}
+
+.simple-head h1 {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+.distri .countdown-all {
+  margin: 0;
+}
+.tablet_hider{
+  width: 10% !important;
+}
+
+}
+
+@media (max-width: 425px){
+header .logo {
+    min-width: 50% !important;
+  }
+.logo__ {
+    margin-top: 180px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.system{
+  margin-bottom: 0;
+}
+.open_text {
+    margin-top: 130px;
+}
+
+}
+</style>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap 5 CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<!-- Custom CSS -->
+<link href="css/main.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="fonts/flaticon.css" rel="stylesheet">
+<link href="css/ionicons.min.css" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Montserrat:300,400,500,600,700,800" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- favicon setting -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_pack/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_pack/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_pack/favicon-16x16.png">
+<link rel="manifest" href="favicon_pack/site.webmanifest">
+<link rel="mask-icon" href="favicon_pack/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- favicon setting -->
+
 </head>
-
 <body>
-  <script type="text/javascript">
-    randomImg();
-  </script>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="position-center-center">
+            <img class="load__planet" src="images/planet.svg" alt="" >
+  </div>
+  </div>
+</div>
+
+<!-- Wrap -->
+<div id="wrap"> 
   
-    <div class="middle hud">
-      <div class="menu">
-        <li class="linker" id='profile'>
-          <a href="#profile" class="btn">
-          <svg id="6d04d81e-ebca-4f43-9ad0-d14cc99c6f03" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.56 197.94"><title>Информация</title><path d="M0,0,114.28,197.94,228.56,0ZM114.28,51.91,67.44,25h93.68Zm-58-4.52,45.55,26.17v52.73Zm70.55,78.9V73.56l45.55-26.17Z"/></svg>
-          Обо мне</a>
-          <div class="smenu">
-            <a href="about.html" title="Пара слов о себе">Кратко</a>
-            <a href="#" title="Пара слов о себе">Развернуто</a>
+  <!-- header -->
+  <header class="sticky">
+    <div class="container"> 
+      
+      <!-- Logo -->
+      <div class="logo"> <a href="index.html"><img class="img-responsive" src="" alt="" ></a> </div>
+      <nav class="navbar ownmenu navbar-expand-lg ">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav">
+            <li class="scroll active"><a href="#hme">Home</a></li>
+            <li class="scroll"> <a href="#about">About </a> </li>
+            <li class="scroll"> <a href="#token">Token</a> </li>
+            <li class="scroll"> <a href="#roadmap">Road Map</a> </li>
+            <li class="scroll"> <a href="#contact">Contact</a> </li>
+          </ul>
+        </div>
+      </nav>
+      
+    </div>
+    <div class="clearfix"></div>
+  </header>
+  
+  <!-- HOME MAIN  -->
+  <section class="simple-head" data-stellar-background-ratio="0.5" id="hme"> 
+    <!-- Particles -->
+    <div id="particles-js"></div>
+    <div class="position-center-center">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="system">
+            <img class="img-responsive planet" src="images/planet.svg" alt="" >
+            <img class="img-responsive glow" src="images/planet__glow.png" alt="" >
           </div>
-        </li>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div><!-- row -->
 
-        <li class="linker">
-          <a class="btn" href="works.html"><svg id="d4772840-bf6e-4a13-9697-a5023f9e2b79" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 70.2"><title>Презентации проектов</title><path id="83d3e6af-25d9-4852-a179-7484a68bcc6c" data-name="money_round" d="M70.2,23.4H7.8A7.8,7.8,0,0,0,0,31.2V62.4a7.8,7.8,0,0,0,7.8,7.8H70.2A7.8,7.8,0,0,0,78,62.4V31.2A7.8,7.8,0,0,0,70.2,23.4ZM14.26,31.2,7.8,37.66C7.8,31.31,9.3,31.2,14.26,31.2ZM7.8,55.94l6.46,6.46C7.92,62.4,7.8,60.92,7.8,55.94ZM25.29,62.4,9.69,46.8l15.6-15.6H52.71l15.6,15.6L52.71,62.4Zm38.45,0,6.46-6.46C70.2,62.28,68.72,62.4,63.74,62.4ZM70.2,37.66,63.74,31.2C70.09,31.2,70.2,32.7,70.2,37.66ZM46.8,46.8A7.8,7.8,0,1,1,39,39,7.8,7.8,0,0,1,46.8,46.8ZM7.8,11.7V7.8A7.8,7.8,0,0,1,15.6,0H62.4a7.8,7.8,0,0,1,7.8,7.8v3.9a3.9,3.9,0,0,1-7.8,0,3.91,3.91,0,0,0-3.9-3.9h-39a3.91,3.91,0,0,0-3.9,3.9,3.9,3.9,0,0,1-7.8,0Z" /></svg>Работы</a>
-        </li>        
-
-        <li class="linker">
-          <a class="btn" href="read.html"><svg id="dbad1a4d-c8f3-44cc-a1ab-ad0f2d99f9c9" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 78"><title>Мысли</title><path id="1fd07e70-8700-4489-b769-ec3121b0d17d" data-name="gallery_grid_view" d="M0,46.8H35.1V0H0Zm7.8-39H27.3V39H7.8ZM42.9,78H78V31.2H42.9Zm7.8-39H70.2V70.2H50.7ZM42.9,0V23.4H78V0ZM70.2,15.6H50.7V7.8H70.2ZM0,78H35.1V54.6H0ZM7.8,62.4H27.3v7.8H7.8Z"/></svg>Статьи</a>
-        </li>
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="system">
+            <img class="img-responsive logo__" src="images/logo_dark.svg" alt="" >
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div><!-- row -->
+      <div class="open_text">
+        <div class="container text-center">
+          <h1>New generation of Decentralization</h1>
+        </div>
+        <div class="container text-center">
+            <a href="#." class="btn btn-inverse">View White Paper</a>
+        </div>
       </div>
-    </div> <!-- middle -->
+    </div>
+  </section>
+  
+  <!-- Content -->
+  <div id="content"> 
+    
+    <!-- Why Choose Us -->
+    <section class="why-choose padding-top-150 padding-bottom-150" id="about">
+      <div class="container"> 
+        
+        <!-- Why Choose Us  ROW-->
+        <div class="row">
+          <div class="col-md-7 margin-top-60"> 
+            
+            <!-- Tittle -->
+            <div class="heading margin-bottom-20">
+              <h4>Jooi Network - Next Generation of Cryptocurrency</h4>
+            </div>
+            <p>Greetings! We present you Jooi Network, a high-tech project based on decentralized cryptocurrency trading.</p>
+            <p>For several years our team of experienced financiers, cryptocurrency traders, and analysts has been actively working on creating and improving a new cryptocurrency, token on the Solana platform.</p>
+            <p>Now our goal is to create a decentralized online exchange for trading and develop a mobile application for it, which will allow the user to manage their assets conveniently and quickly.</p>
+            <p>The comfort of investors and users has always been and always will be in the first place for our team, so we put most of our resources and efforts into the creation of a fast and reliable technical core as well as a convenient and intuitive interface.</p>
+            <p>At the moment, we are finalizing the creation of our online exchange, including the thorough testing of its reliability and performance. At the same time, we are finalizing the preparation of the Jooi Network token for the ICO stage.</p>
+            
+            <div class="ultra-ser">
+              <span>Powered by</span><a class="vid-btn popup-youtube" href=""> <img class="solana" src="images/s.svg" alt="" ></i>Solana
+              </a>
+          </div>
 
-    <img class="system" src="img/sys.svg" alt="">
-<!--   footer
- -->
-<div class="footer sfooter">
-
-  <div class="foricon">
-    <svg id="ee51226a-b840-41de-a8ca-5751e0f2042b" data-name="teist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.2 60.2"><title>Так со мной можно связаться</title><path d="M60.2,42.14l-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm-6-18.06-6-6-6,6,6,6ZM54.18,12l-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm-12,12-6-6-6,6,6,6Zm12-24.08-6-6-6,6,6,6ZM24.08,6l-6-6L12,6l6,6Zm-12,12L6,12l-6,6,6,6Z"/></svg>
-<nobr>Контактная информация <i>:</i></nobr></div>
-
-  <div class="foricon">
-    <svg id="3f16020a-6eaa-4dc4-995e-06bc6bc18b36" data-name="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.26 78.24"><title>Електропочта ✉️</title><path d="M107.26,67.51V10.73A10.75,10.75,0,0,0,96.53,0H10.73A10.75,10.75,0,0,0,0,10.73V67.51A10.75,10.75,0,0,0,10.73,78.24h85.8a10.75,10.75,0,0,0,10.73-10.73ZM91.3,7.68,53.21,41.87,15,7.68ZM35.09,37.91,7.68,63.56V13.41ZM13.63,70.56,42,44.06l8.23,7.35a4.33,4.33,0,0,0,.66.49,4.54,4.54,0,0,0,5.44-.52l8.47-7.59L92.93,70.56ZM71.57,37.67l28-25.12V64.26Z"/></svg>
-          <span id="text">teist64@gmail.com</span>
-          <button id="copy" title="CTRL + C">Копировать в буфер</button>
+            <!-- <a class="vid-btn margin-top-30 popup-youtube" href="https://www.youtube.com/watch?v=7e90gBu4pas"><i class="fas fa-play-circle"></i> Watch Video <br>
+            <span>How it work</span></a> -->
+          </div>
+          
+          <!-- Image -->
+          <div class="col-md-5 text-right"> <img src="images/crypto.jpg" alt="Why Choose Us Image" > </div>
         </div>
-
-  <div class="foricon">
-   <svg id="f81e6596-df59-400d-bcf2-a42b2001e740" data-name="tlg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.68 92.66"><title>Телеграм</title><path d="M5.54,38.22A17,17,0,0,0,.9,41.11c-1.36,1.18-1.13,2.77.37,3.81a11.59,11.59,0,0,0,3.1,1.46Q15.89,50,27.44,53.58a1.83,1.83,0,0,1,1.37,1.34c.91,2.93,1.89,5.84,2.83,8.76l6.9,21.23c.52,1.61.94,2,2.63,2.07a6.07,6.07,0,0,0,4.89-1.89c4-4,8.11-7.87,12.14-11.83.58-.58,1-.67,1.62-.12.87.74,1.84,1.38,2.77,2.07,7.11,5.25,14.18,10.56,21.34,15.73,3.81,2.75,8.19,2.57,9.48-3.3,2.06-9.33,4-18.68,6-28q4.94-23.19,9.86-46.38c.54-2.55,1-5.11,1.41-7,0-3.59-1.3-5.79-3.6-6.15a7.72,7.72,0,0,0-3.8.43Q63.68,15.72,24.11,31C17.92,33.41,11.7,35.73,5.54,38.22ZM33.13,51.56Q60,34.66,86.86,17.71a8.9,8.9,0,0,1,2.74-1.14c.5-.12,1.12.24,1.68.38-.21.53-.28,1.21-.65,1.55-3.62,3.34-7.28,6.63-10.94,9.92Q61.88,44.5,44.08,60.59a2.26,2.26,0,0,0-.67,1.34c-.57,5.81-1.1,11.62-1.65,17.43,0,.29-.14.58-.2.87l-.26,0q-2-6.24-4.06-12.46c-1.57-4.82-3.13-9.63-4.74-14.44A1.25,1.25,0,0,1,33.13,51.56Z"/></svg>          
-          <a href="https://t.me/teist64">@teist64</a>
+        
+        <!-- Services ROW -->
+        <div class="row padding-top-150"> 
+          
+          <!-- Services -->
+          <div class="col-md-4">
+            <div class="ib-icon"><img class="icon__" src="images/icons/1.png" alt="" ></div>
+            <div class="ib-info">
+              <h4 class="h6">Low fees</h4>
+              <p>Our project is based on the Solana blockchain, which left the problem of high fees in the past</p>
+            </div>
+          </div>
+          
+          <!-- Services -->
+          <div class="col-md-4">
+            <div class="ib-icon"><img class="icon__" src="images/icons/2.png" alt="" ></div>
+            <div class="ib-info">
+              <h4 class="h6">High speed</h4>
+              <p>The New PoH algorithm allows us to confirm the transaction in few seconds</p>
+            </div>
+          </div>
+          
+          <!-- Services -->
+          <div class="col-md-4">
+            <div class="ib-icon"><img class="icon__" src="images/icons/3.png" alt="" ></div>
+            <div class="ib-info">
+              <h4 class="h6">Capacity</h4>
+              <p>With our technical capacity, we can process up to 50 thousand transactions per second</p>
+            </div>
+          </div>
+          
+          <!-- Services -->
+          <div class="col-md-4">
+            <div class="ib-icon"><img class="icon__" src="images/icons/4.png" alt="" ></div>
+            <div class="ib-info">
+              <h4 class="h6">DEX</h4>
+              <p>For a better business experience, we want to introduce you to the new generation of decentralized exchanges: <a href="https://jooi.exchange">jooi.exchange</a></p>
+            </div>
+          </div>
+          
+          <!-- Services -->
+          <div class="col-md-4">
+            <div class="ib-icon"><img class="icon__" src="images/icons/5.png" alt="" ></div>
+            <div class="ib-info">
+              <h4 class="h6">Mobile App</h4>
+              <p>Our mobile app will work as a decentralized exchange as well as a crypto wallet</p>
+            </div>
+          </div>
+          
+          <!-- Services -->
+          <div class="col-md-4">
+            <div class="ib-icon"><img class="icon__" src="images/icons/6.png" alt="" ></div>
+            <div class="ib-info">
+              <h4 class="h6">Token Staking</h4>
+              <p>Our customers get access to staking right after the tokens are accrued</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    
+    <!-- Token Distribution -->
+    <section class="distri drk padding-top-50 padding-bottom-50 " id="token">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- Token  -->
+          <div class="col-md-7 img-centered"> <img src="images/dia.png" alt="Why Choose Us Image" >
+          </div>
+          
+          <!-- Total Distribution -->
+          <div class="col-lg-4">
+            <h3 class="padding-top-70">Time left for registration</h3>
+            <div class="countdown-all"> 
+              
+              <!-- Countdown -->
+              <ul class="row">
+                <!-- Days -->
+                <li class="col-md-3">
+                  <article> <span class="days">00</span>
+                    <p class="days_ref">Days</p>
+                  </article>
+                </li>
+                <!-- Hours -->
+                <li class="col-md-3">
+                  <article> <span class="hours">00</span>
+                    <p class="hours_ref">Hours</p>
+                  </article>
+                </li>
+                <!-- Mintes -->
+                <li class="col-md-3">
+                  <article><span class="minutes">00</span>
+                    <p class="minutes_ref">Minutes</p>
+                  </article>
+                </li>
+                <!-- Seconds -->
+                <li class="col-md-3">
+                  <article><span class="seconds">00</span>
+                    <p class="seconds_ref">Seconds</p>
+                  </article>
+                </li>
+              </ul>
+              <a href="#." class="btn btn-inverse">Connect Wallet</a> 
+              
+              <!-- Buy Option -->
 
-  <div class="foricon">
-    <svg id="b8109a04-a19b-40ba-b801-e74c53f65091" data-name="cpr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.2 87.2"><title>Копирование материалов - разрешено со ссылкой на источник</title><path d="M87.18,42.28a43.6,43.6,0,1,0-42.26,44.9A43.64,43.64,0,0,0,87.18,42.28ZM44.64,78A34.38,34.38,0,1,1,78,42.56,34.4,34.4,0,0,1,44.64,78Z"/><path d="M49.59,52.31a23.31,23.31,0,0,1-3.71.44c-3.25.09-5.55-.67-6.9-2.3s-2.08-4-2.17-7a10.77,10.77,0,0,1,1.87-7q2-2.7,6.24-2.82a15.65,15.65,0,0,1,3.6.27,26.09,26.09,0,0,1,3,.81L53.26,27a22.81,22.81,0,0,0-9.36-1.58,18,18,0,0,0-7.27,1.63A16.15,16.15,0,0,0,28,36.82a19.63,19.63,0,0,0-1,6.93,23.9,23.9,0,0,0,1.21,7,14.56,14.56,0,0,0,3.31,5.52,15,15,0,0,0,5.6,3.59,20.65,20.65,0,0,0,8,1.13,26.94,26.94,0,0,0,5.5-.68A22.53,22.53,0,0,0,54.8,59l-1.58-7.78A15.89,15.89,0,0,1,49.59,52.31Z" style="fill:#fbfefa"/></svg>
-          <nobr>2018 <i>&ndash;</i> 2019</nobr>
+            </div>
+          </div>
+
+<div class="col-md-2 tablet_hider"></div>
+<div class="col-md-5 col-sm-12 padding-top-50">
+<p class="shine_head">20% ICO</p>
+<p>10% - <span class="shine_text">First step  0.10$</span> per token (Locked for 12 months)<br>
+10% - <span class="shine_text">Second step 0.20$</span> per token</p>
+</div>
+
+<div class="col-md-4 padding-top-50">
+<p class="shine_head">10% Team <span style="color:#fff">- Locked for</span> 24 months</p>
+<p>15% - Staking rewards and Trading rewards<br>
+30% - Liquidity<br>
+25% - Reserve</p>
+</div>
+
         </div>
-</div><!-- footer -->
+      </div>
+    </section>
+    
+    <!-- Development -->
 
-<script>
-  $('#copy').click(function() {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($('#text').text()).select();
-      document.execCommand("copy");
-      $temp.remove();
+    <section class=" padding-bottom-100">
+        <div class="col-md-10 padding-top-100 graph_mod"> <img src="images/graph.jpg" alt="Why Choose Us Image" ></div>
+    </section>
 
-      $(this).text('Почта скопирована');
-  });
-</script>
+<!-- Road Map -->
+    <section class="road-map padding-top-50 padding-bottom-50" id="roadmap">
+      <div class="container-fluid">
+        <h2>Our Road Map</h2>
+        
+        <!-- Road List -->
+        <ul class="edu-list margin-top-50">
+          
+          <!-- Jan 2018 -->
+          <li> <span>January  2018</span>
+            <h5>Private sale</h5>
+          </li>
+          <!-- Feb 2018 -->
+          <li> <span>February  2018</span>
+            <h5>Registration on lottery to public sale</h5>
+          </li>
+          <!-- March 2018 -->
+          <li> <span>March 2018</span>
+            <h5>Public sale to lottery winners</h5>
+          </li>
+          <!-- April 2018 -->
+          <li> <span>April 2018</span>
+            <h5>Airdrop</h5>
+          </li>
+          
+          <!-- March 2018 -->
+          <li> <span>May 2018</span>
+            <h5>Start Staking</h5>
+          </li>
+          <!-- April 2018 -->
+          <li> <span>June 2018</span>
+            <h5>Listing on ******</h5>
+          </li>
+          <!-- July 2018 -->
+          <li> <span>July 2018</span>
+            <h5>Launch our Mobile App</h5>
+          </li>
+          <!-- August 2018 -->
+          <li> <span>August 2018</span>
+            <h5>Launch DEX</h5>
+          </li>
+          <!-- September 2018 -->
+          <li> <span>September 2018</span>
+            <h5>Integrate to Solana our Ideas</h5>
+          </li>
+<!-- 
+          <li> <span>October 2018</span>
+            <h5>October Map Tittle</h5>
+            <p>Best CSS Portfolio Website</p>
+          </li>
+          
+          <li> <span>November 2018</span>
+            <h5>November Road Map Tittle</h5>
+            <p>Site of The Month</p>
+          </li>
+
+          <li> <span>December 2018</span>
+            <h5>December Map Tittle</h5>
+            <p>Best CSS Portfolio Website</p>
+          </li> -->
+        </ul>
+          <li class="centr-script">
+            Further more
+          </li>
+      </div>
+    </section>
+    
+<section class="community-sec padding-top-150 padding-bottom-150">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sm-intro">
+               <h2>Join our community</h2>
+              <ul class="socials">
+                <li><a href="#."><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#."><i class="fab fa-telegram"></i></a></li>
+                <li><a href="#."><i class="fab fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="news-letter">
+              <h2>Subscribe to our newsletter</h2>
+              <form>
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+  <!-- </div> !-->
+  
+  <!-- Footer -->
+  <footer id="contact" id="contact">
+    <div class="container">
+      <div class="parthner">
+<!--         <h6>Partnered with Innovative Globally</h6>
+ -->        <ul>
+          <li><a href="#."><img src="images/baners/1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/4.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/5.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/6.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/7.png" alt=""></a></li>
+          <li><a href="#."><img src="images/baners/8.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Rights -->
+    <div class="rights">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2021 Jooi Network. All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-right"> <a href="#.">Faqs </a> <a class="mailer" href="mailto:support@jooi.network">support@jooi.network</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- GO TO TOP --> 
+	<a href="#" class="cd-top"><i class="ion-chevron-up"></i></a> 
+<!-- GO TO TOP End --> 
+
+<!-- Script --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<script src="js/bootstrap.bundle.js"></script> 
+<script src="js/particles.min.js"></script> 
+<script src="js/jquery.counterup.min.js"></script> 
+<script src="js/jquery.sticky.js"></script> 
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<script src="js/main.js"></script>
 </body>
 </html>
